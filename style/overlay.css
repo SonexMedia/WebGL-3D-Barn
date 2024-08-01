@@ -1,0 +1,84 @@
+#overlay
+{
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	position:absolute;
+	z-index:99999;
+	background-color:black;
+	opacity:0.7;
+	display:none;
+}
+
+#over_overlay
+{
+	position : absolute; 
+	z-index:109999;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	display:none;
+}
+
+#overlay_image
+{
+	display: block
+}
+
+.popup
+{ 
+	display: none;
+	width : 400px;
+	height: 325px;
+	border: 3px solid #cccccc;
+	margin: 200px auto;
+	background-color:white;
+}
+
+#loading_area
+{ 
+	display : block;
+	width : 400px;
+	height: 140px;
+	border: 3px solid #cccccc;
+	margin: 200px auto;
+	background-color:white;
+	padding-top: 20px;
+	display: none;
+}
+
+.overlay_title {width : 100%; height : 34px; background:url(../img/overlay_title.png) repeat-x;}
+.overlay_title span {margin-left : 20px; line-height:34px;}
+
+.overlay_mark {margin : 10px; border-bottom : 1px solid #cccccc;}
+.overlay_body p {font-size : 11px; margin-left:30px;}
+
+.overlay_left {margin-left : 30px; float : left; width:100px; font-size:13px; font-weight:bold; line-height:20px;}
+.overlay_right input {width : 230px; border:1px solid gray;}
+.overlay_add {width : 100px;}
+.overlay_close {cursor : pointer; float:right; margin-top:5px; margin-right:10px; }
+
+.upload_area {margin : 15px 30px 10px; width:340px; min-height:80px; border-bottom:1px dotted gray;}
+.upload_area a {font-size : 12px; color:blue; text-decoration:none; margin-left:20px;}
+.upload_area a:hover {text-decoration:underline;}
+
+#url_area 		{ margin-top: 5px; border-bottom: 1px dotted gray; padding-bottom: 10px; margin-bottom: 10px;}
+#url_area span 	{ font-size: 12px; font-weight: bold;}
+#url_area input { border: 1px solid gray; margin-left: 20px;}
+
+.preview_area {margin-left : 30px; overflow : auto; width:340px; height:100px;}
+.preview_area img {width : 200px;}
+
+#loading {float : right; width:24px; display:none;}
+
+#loading_area center {margin-top: 10px;}
+#progress_bar 	{width: 100%; height: 15px; border: 1px solid gray; margin-top: 45px;}
+#complete 		{background-color: #6467f3; height: 13px; margin-top: 1px; width: 30%;}
+
+#project_descr	{width:100%; height: 135px;}
+#view_pdescr	{width:100%; height: 135px;}
+#project_list	{width:150px; margin-left: 10px;}

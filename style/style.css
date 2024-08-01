@@ -1,0 +1,116 @@
+body
+{
+	top			: 0px;
+	left		: 0px;
+	background	: url("../img/main_bg.png") no-repeat white;
+	background-size: 50% 50%;
+	font-family	: Arial;
+	margin		: 0px;
+	padding		: 0px;
+	font-family	: Arial, Helvetica, sans-serif;
+	overflow	: hidden;
+	width 		: 100%;
+	height 		: 100%;
+	background-position: right bottom;
+}
+
+body ul 		{list-style : none; width:100%; margin:0px; padding:0px;}
+body .f_l 		{float: left;}
+
+.clear_both		{clear:both;}
+.colorpicker 	{z-index: 9999999;}
+input.small		{width: 40px; height: 35px; font-size: 20px; padding-left: 5px;}
+
+#top_area 		{ width : 100%; height : 45px; background	: url("../img/Topbar.png") repeat-x; top : 0px; left : 0px; position : fixed; z-index : 100;}
+#top_area img 	{width:120px; margin-left: 20px;}
+#mode_2d		{ width : 30px; height : 18px; border-radius : 15px; float : right; margin:10px 0px; padding:5px; cursor:pointer; text-align:center; font-size:11px; line-height:18px;}
+#mode_3d		{ width : 30px; height : 18px; border-radius : 15px; float : right; margin:10px 10px; padding:5px; cursor:pointer; text-align:center; font-size:11px; line-height:18px;}
+
+.sel_mode		{ background-color:white;}
+.unsel_mode		{ background-color:gray; color:white;}
+
+#canvas_area 	{ width : 800px; height: 600px; left : 300px; top : 100px; position:absolute; z-index:10; border: 1px solid #5473b6; border-radius: 15px 15px 0px 0px; overflow: hidden;}
+#canvas_area .lvl_area {width : 100%; height:100%;}
+#canvas_area center	{ padding: 5px; background-color: #5473b6; color: white; font-family: "Comic Sans MS";}
+#canvas 		{ }
+#canvas_area .canvas-container {position: absolute !important;}
+
+#grid_bg 		{ border: 1px solid #ccc; border-width: 1px 0 0 1px; background-color: white;}
+#grid_bg div 	{ border: 1px solid #ccc; border-width: 0 1px 1px 0; float: left; }
+
+#left_area  	{ 
+					width : 210px; height:100%; background-color:rgba(234,234,234,0.85); border-right:1px solid #888585;
+					position:absolute; top:0px; left:0px; padding-top:80px;  box-shadow: 0px 0px 20px #888888; z-index:50;
+				}
+#left_area h2	{ font-size : 14px; padding-left:20px; border-bottom:1px solid gray;}
+#left_slider	{ position : absolute; background:url("../img/tabslider.png") no-repeat center right; width:22px; height:103px; top:45%; left:210px; cursor:e-resize;}
+#left_area .category 	{padding-left:15px;}
+#left_area .category ul li
+				{
+					float : left; width:55px; padding: 2px; height:55px;
+					background-color:white; margin-right:5px; margin-bottom:10px;
+					text-align:center; box-shadow: 3px 3px 5px #888888;
+					cursor:pointer;
+				}
+#left_area .category ul li p 	{ margin:0px; padding:0px; font-size:11px;}
+#left_area .category ul li img 	{ width: 53px; height: 53px;}
+#left_area .category h3	{font-size : 14px; color:#0066CC; font-weight:bold;}
+
+#right_area 	{ 
+					width : 200px; height : 100%; background-color:rgba(234,234,234,0.85); border-left:1px solid #888585; position:absolute;
+					top:0px; right:0px; padding-top:80px; box-shadow: 0px 0px 20px #888888; z-index:50;
+				}
+#right_area h3	{
+					padding : 10px; padding-bottom : 6px; margin:0px; font-size : 14px; font-family:Arial, Helvetica, sans-serif;
+					background: #b3b3b3;
+					background: -moz-linear-gradient(top, #d5d5d5 0%, #b3b3b3);
+					background: -webkit-gradient(linear, left top, left bottom, from(#d5d5d5), to(#b3b3b3));
+				}
+
+
+#right_area table 		{width: 94%; margin-left: 3%; margin-top: 20px;}
+#right_area table dd 	{margin:0px; padding: 0px;}
+#right_area table dl 	{margin:0px; padding: 0px; float: left}
+#right_area table p 	{margin:0px; padding: 0px; margin-top:5px; margin-bottom: 5px; font-family: "Berlin Sans FB Demi"; font-size: 13px; color: #555;}
+#right_area table .btn_up 				{background: url("../img/go-up.png") no-repeat; background-size: 100% 100%; width: 24px; height: 18px; cursor: pointer; margin: 0px; margin-left: 2px; background-color: #f5f5f5; border-radius: 3px; box-shadow: 0px 0px 3px #ccc; margin-bottom: 2px;}
+#right_area table .btn_down 			{background: url("../img/go-down.png") no-repeat; background-size: 100% 100%; width: 24px; height: 18px; cursor: pointer; margin: 0px; margin-left: 2px; background-color: #f5f5f5; border-radius: 3px; box-shadow: 0px 0px 3px #ccc;}
+#right_area table input[type="text"] 	{border: 1px solid #c9c9c9; border-radius: 5px;}
+#right_area table .large 				{height: 25px; width: 170px; padding-left: 10px; }
+#right_area table .color_picker			{height: 25px; width: 100px; padding-left: 10px; margin-left: 10px; float: left; margin-top: 3px;}
+#right_area table .split_line			{border-bottom: 1px solid #ccc; padding-top: 10px}
+#right_area #obj_prop 	{display: none;}
+
+#right_slider	{ position : absolute; background:url("../img/tabslider-right.png") no-repeat center right; width:22px; height:103px; top:45%; right:200px;  cursor:e-resize;}
+
+#size_slider	{ position : absolute; bottom : 70px; z-index:200;}
+#size_slider img{ float : left; cursor: pointer;}
+#slider_body	{ width : 180px; height : 7px; float:left; background-color:white;border:1px solid #999999; border-radius:5px; margin-top:4px; margin:4px;}
+#slider_body a	{ width : 12px; height:15px; border-radius : 3px; border:1px solid black; margin-left:-5px;}
+
+#btn_grid 		{ float : left; margin-right: 15px; }
+#btn_grid.sel	{box-shadow: 0px 0px 15px blue; cursor: pointer;}
+#grid_slider	{ float : left; width : 135px; border: 1px solid gray; margin-top: 7px !important; height: 7px; background-color: #ccc;}
+#grid_slider a 	{ width : 15px; height: 16px; border: 1px solid gray; background-color: white;}
+
+#move_controlT	{ background-color : #888; width : 210px; height : 30px; position:fixed; z-index:99; top : 80px; display:none; cursor:pointer;}
+#move_controlB	{ background-color : #888; width : 210px; height : 30px; position:fixed; z-index:99; top : 95%;  display:none; cursor:pointer;}
+#new_route		{ font-size:12px; line-height:20px;}
+
+#ctrl_area 		{ position: absolute; height: 35px; background-color: white; width: 100%; z-index: 999; top: 45px; border-bottom: gray; box-shadow: 0px 0px 20px gray; border-radius:0px 0px 15px 15px;}
+#ctrl_area img 	{ width: 32px;}
+#ctrl_area ul  	{ right : 100px; float: right; width: 650px;}
+#ctrl_area ul li{ float: left; margin-right: 5px; cursor: pointer;}	
+.spliter 		{ background:url("../img/spliter.png"); background-position:center center; height: 32px; margin-left: 10px; margin-right: 15px !important;}
+
+#tool_area 		{ position: absolute; z-index: 33; left: 225px; top: 120px; background-color: white; box-shadow: 0px 0px 5px gray; width: 45px;}
+#tool_area h2 	{ font-size: 14px;}
+#tool_area li 	{ text-align: center; margin-bottom: 15px; cursor: pointer;}
+#tool_area dd 	{ background-color: white; width: 265px; height: 40px; padding:5px; box-shadow: 3px 0px 3px gray; border:1px solid gray; border-left: 0px none; position: absolute; margin-top: -45px; margin-left: 45px; display: none;}
+#tool_area dl 	{ float: left; margin:0px; padding:0px; margin-right: 5px;}
+#tool_area .spliter{margin: 0px; margin-right: 5px !important;  margin-top: 5px;}
+
+/*#area_3d 		{ width: 100%; height: 100%; position: absolute; background-color: #ccccff; z-index:999; display: none;}*/
+#area_3d 		{ width: 100%; height: 100%; position: absolute; background: url("../img/3d_bg.png") white repeat-x; z-index:999; display: none;}
+#canv_3d 		{ width: 100%; height: 100%;}
+
+#footer_label 	{ position: fixed; bottom: 20px; z-index: 9;}

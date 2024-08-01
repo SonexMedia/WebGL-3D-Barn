@@ -1,0 +1,71 @@
+<div id="overlay_image" class="popup">
+	<div class="overlay_title"><span>Add Image</span><img src="img/close.png" width="20px;" class="overlay_close" /></div>
+	<div class="overlay_body">
+    	<p>Please Input URL or UPLOAD one image to use. </p>
+        
+        <div class="upload_area">
+            <div id="url_area">
+                <span>Image URL: </span><input type="text" id="img_url">
+                <a href="#" id="btn_useimage">Preview</a>
+            </div>
+            <form name="form" method="POST" enctype="multipart/form-data">
+            	<input type="file" name="fileToUpload" id="fileToUpload"/><a href="#" id="upload_btn">Upload File</a>
+                <img id="loading" src="img/loading.gif" style="">            
+            </form>
+        </div>
+         
+         <div class="preview_area"></div>
+
+         <br />
+    	<center><input type="button" class="overlay_add" id="btn_addimg"  value="Add"/></center>
+    </div>
+</div>
+
+<div id="loading_area" class="popup">
+    <center>
+        <img src="img/loading.gif"/>
+        <span>Loading 3D modelings...</span>
+    </center>
+    <center>
+        <span id="s_load">10</span>/<span id="s_total">10</span>
+    </center>
+    <div id="progress_bar"><div id="complete"></div>
+    </div>
+</div>
+
+<div id="creat_project" class="popup">
+    <div class="overlay_title">
+        <span>Create New Project</span>
+        <img src="img/close.png" width="20px;" class="overlay_close" />
+    </div>
+    <div class="overlay_body">
+        <div class="upload_area">
+            <div id="url_area">
+                <span>Title: </span><input type="text" id="project_title">
+            </div>
+            <textarea id="project_descr"></textarea>            
+        </div>
+        <center><input type="button" class="overlay_add" id="btn_addprj" value="Save"/></center>
+    </div>
+</div>
+
+<div id="open_project" class="popup">
+    <div class="overlay_title">
+        <span>Load Project</span>
+        <img src="img/close.png" width="20px;" class="overlay_close" />
+    </div>
+    <div class="overlay_body">
+        <div class="upload_area">
+            <div id="url_area">
+                <span>Project: </span>
+                <select id="project_list">
+                    <option>First Project</option>
+                    <option>Second Project</option>
+                    <option>Third Project</option>
+                </select>
+            </div>
+            <textarea id="view_pdescr" disabled></textarea>            
+        </div>
+        <center><input type="button" class="overlay_add" id="btn_selprj" value="Open"/></center>
+    </div>
+</div>
